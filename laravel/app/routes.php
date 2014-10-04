@@ -16,4 +16,6 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('test', array('uses' => 'HomeController@showtest'));
+Route::get('questions', 'QuestionsController@showAllQuestions');
+Route::get('questions/{id}', 'QuestionsController@showQuestion');
+Route::get('questions/{id}/{name}', 'QuestionsController@showQuestion');

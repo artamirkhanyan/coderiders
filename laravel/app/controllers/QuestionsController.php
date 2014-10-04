@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extends BaseController {
+class QuestionsController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -20,9 +20,14 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 	
-	public function showtest()
+	public function showQuestion($id=false, $name=false)
 	{
-		echo "test";
+		echo $id;
+	}
+        
+        public function showAllQuestions()
+	{
+		echo 'all questions';
 	}
 
 }

@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'AccountantController@getIndex');
 
-Route::get('questions', 'QuestionsController@showAllQuestions');
-Route::get('questions/{id}', 'QuestionsController@showQuestion');
-Route::get('questions/{id}/{name}', 'QuestionsController@showQuestion');
+//Route::get('questions/{id}', 'QuestionsController@showQuestion');
+//Route::get('questions/{id}/{name}', 'QuestionsController@showQuestion');

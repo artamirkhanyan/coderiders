@@ -6,7 +6,17 @@ class AccountantController extends BaseController {
     public function getIndex(){
         
         $this->layout->content = View::make('accountant.index')
-                ->with('testVar', 'barev');
+                ->with('testVar', 'Statistics');
+    }
+    
+    public function getPayin(){
+        
+        $this->layout->content = View::make('accountant.payin');
+    }
+    
+    public function getPayout(){
+        
+        $this->layout->content = View::make('accountant.payout');
     }
     
     

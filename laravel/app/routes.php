@@ -13,5 +13,7 @@
 
 Route::get('/', 'AccountantController@getIndex');
 
+Route::get('payin', 'AccountantController@getPayin');
+Route::get('payout', 'AccountantController@getPayout');
 //Route::get('questions/{id}', 'QuestionsController@showQuestion');
 //Route::get('questions/{id}/{name}', 'QuestionsController@showQuestion');

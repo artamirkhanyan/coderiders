@@ -7,7 +7,7 @@
 @section('script')
 
 <script>
-    console.log($);
+    //console.log($);
 </script>
 
 @stop
